@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte';
+
     let jeux = [];
 
     onMount(async () => {
@@ -12,7 +13,7 @@
     });
 </script>
 
-<h1>🎮 Mes Jeux</h1>
+<h1>🎮 Les Jeux</h1>
 <ul>
     {#each jeux as jeu}
         <li>{jeu.nom} - {jeu.description}</li>
