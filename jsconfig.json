@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "$lib/*": ["src/lib/*"],
+        "$routes/*": ["src/routes/*"],
+        "$components/*": ["src/lib/components/*"],
+        "$stores/*": ["src/lib/stores/*"]
+      }
+    },
+    "include": ["src"]
+  }
