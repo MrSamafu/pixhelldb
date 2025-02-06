@@ -57,6 +57,8 @@
 	},
 	"dependencies": {
 		"axios": "^1.7.9",
-		"pixhelldb": "file:"
+		"bootstrap-icons": "^1.11.3",
+		"pixhelldb": "file:",
+		"sass": "^1.84.0"
 	}
 }

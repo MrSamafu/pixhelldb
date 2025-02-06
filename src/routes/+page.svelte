@@ -1,3 +1,23 @@
-<h1 class="title">Viande</h1>
-<p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+    import "../styles/pages/home.scss";
+</script>
+
+<div class="first-container">
+    <div class="wrap-button">
+        <div class="button">
+            <p>Jeux</p>
+        </div>
+        <div class="button">
+            <p>Consoles</p>
+        </div>
+        <div class="button">
+            <p>Accessoires</p>
+        </div>
+        <div class="button">
+            <p>Ma collection</p>
+        </div>
+        <div class="button">
+            <p>Références</p>
+        </div>
+    </div>
+</div>
