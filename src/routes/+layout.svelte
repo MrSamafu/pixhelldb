@@ -2,14 +2,23 @@
 	import '../app.css';
 	import "../styles/main.scss";
 	let { children } = $props();
+	import { goto } from '$app/navigation';
+
+	function navigate(event) {
+        const link = event.currentTarget.getAttribute('data-link');
+        if (link) {
+            goto(link); // Utilisation de la navigation SvelteKit
+        }
+    }
+
 </script>
 <header class="header">
-	<div class="profil">
+	<button class="profil" onclick={navigate} data-link="/" aria-label="home">
 		<i class="bi bi-house"></i>
-	</div>
+	</button>
 	<h1 class="main-title">PixhellDB</h1>
-	<div class="profil">
+	<button class="profil" onclick={navigate} data-link="/profil" aria-label="profil">
 		<i class="bi bi-person"></i>
-	</div>
+	</button>
 </header>
 {@render children()}
