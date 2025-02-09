@@ -21,7 +21,7 @@
             >
             <p>Jeux</p>
         </button>
-        <button class="button" data-link="/login" onclick={navigate}>
+        <button class="button" data-link="/consoles" onclick={navigate}>
             <p>Consoles</p>
         </button>
         <button class="button" data-link="/accessoires" onclick={navigate}>
