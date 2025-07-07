@@ -1,8 +1,23 @@
 @use './variables' as *;
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 
-body {
+body, html {
     background-color: $eerie-black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+body div:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .header {
@@ -12,6 +27,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    position: absolute;
+    top: 0px;
+    width: 100%;
 }
 
 .main-title {
@@ -42,9 +60,9 @@ body {
 }
 
 .button {
-    width: 100%;
-    margin: 1rem;
+    width: 80%;
     padding: 1rem;
+    margin: 1rem;
     background-color: $white;
     border-radius: 5px;
     display: flex;
@@ -56,4 +74,10 @@ body {
     &:hover {
         background-color: $white-smoke;
     }
+}
+
+input {
+    margin: 1rem;
+    padding:0.5em;
+    border-radius: 5px;
 }

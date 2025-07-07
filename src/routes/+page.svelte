@@ -1,6 +1,17 @@
 <script>
     import "../styles/pages/home.scss";
     import { goto } from '$app/navigation';
+    import { redirect } from '@sveltejs/kit';
+
+    export function load({ cookies }) {
+        const session = cookies.get("session");
+
+        if (!session) {
+            throw redirect(302, '/login');
+        }
+
+        return { session };
+    }
 
     function navigate(event) {
         const link = event.currentTarget.getAttribute('data-link');

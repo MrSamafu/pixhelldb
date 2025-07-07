@@ -4,6 +4,12 @@
 	let { children } = $props();
 	import { goto } from '$app/navigation';
 
+	export function load({ cookies }) {
+		return {
+			session: cookies.get("session") || null
+		};
+	}
+
 	function navigate(event) {
         const link = event.currentTarget.getAttribute('data-link');
         if (link) {
